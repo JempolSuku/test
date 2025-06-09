@@ -95,6 +95,7 @@ body {
 
 .header-scrolled {
     background-color: var(--main-color);
+    background-image: url(assets/nav-dust.svg);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -136,6 +137,10 @@ body {
     .header {
         padding: 1.5rem 2rem;
     }
+
+    .btn-contactabout {
+        align-content: center;
+    }
 }
 
 @media (max-width:768px){
@@ -176,6 +181,29 @@ body {
     .hero {
         padding-top: 0;
     }
+
+    .about .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .row .content {
+        padding: 1rem;
+    }
+
+    .about.row .contact h3 {
+        font-size: 2.5rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+
+    .btn-contactabout {
+        display: inline-block;
+        margin: 2rem auto 0;
+    }
 }
 
 @media (max-width:450px) {
@@ -187,7 +215,6 @@ body {
         padding: 0 1rem 0;
         margin: 0 0 0;
     }
-
 }
 
 #home {
